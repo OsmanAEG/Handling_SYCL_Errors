@@ -1,4 +1,7 @@
 #include "quadratic_formula.h"
+#include "error_handling.h"
+
+constexpr int using_sycl = 0;
 
 int main(){
   // defining quadratic properties
@@ -10,4 +13,6 @@ int main(){
 
   auto x1 = roots.first;
   auto x2 = roots.second;
+
+  output_roots(x1, x2);
 }
