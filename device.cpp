@@ -1,8 +1,5 @@
 #include <CL/sycl.hpp>
 #include "quadratic_formula.h"
-//#include "error_handling.h"
-
-constexpr int using_sycl = 1;
 
 // prints device name
 template<typename Queue_type>

@@ -1,7 +1,4 @@
 #include "quadratic_formula.h"
-#include "error_handling.h"
-
-constexpr int using_sycl = 0;
 
 int main(){
   // defining quadratic properties

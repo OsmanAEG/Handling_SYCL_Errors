@@ -1,14 +1,15 @@
 #include <math.h>
 #include <assert.h>
 #include <tuple>
-#include "error_handling.h"
+#include <iostream>
 
 template<typename Scalar_type>
 auto quadratic_formula(Scalar_type a, Scalar_type b, Scalar_type c){
   const auto descriminant = b*b - 4.0*a*c;
 
   //if(descriminant < 0) throw std::runtime_error("Negative Descriminant");
-  throw_error("Negative Descriminant");
+
+  assert(descriminant >= 0);
 
   const auto denominator = 2.0*a;
 
